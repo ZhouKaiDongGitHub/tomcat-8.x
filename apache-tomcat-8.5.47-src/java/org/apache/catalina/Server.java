@@ -45,6 +45,42 @@ import org.apache.catalina.startup.Catalina;
  * class in its constructor(s).
  *
  * @author Craig R. McClanahan
+ *
+ *一个<code>Server</code>元素表示整个Catalina servlet容器。它的属性表示整个servlet容器的特征。一个<code>Server</code>可以包含一个或多个<code>Services</code>，以及顶层的命名资源集。
+ * 通常情况，实现了这个接口的类也需要实现<code>Lifecycle</code>接口，例如其中的start()和stop()方法，是每一个<code>Services</code>都需要的
+ *  在这之间，实现必须在<code>port</code>属性指定的端口号上打开服务器套接字。当接受连接时，将读取第一行并与指定的关闭命令进行比较。如果命令匹配，则启动关闭服务器。
+ *  该类的具体实现应该在其构造函数中使用<code>ServerFactory</code>类注册(单例)实例。
+ *
+ * <Server port="8005" shutdown="SHUTDOWN">
+ *   <Listener className="org.apache.catalina.startup.VersionLoggerListener" />
+ *   <GlobalNamingResources>
+ *     <Resource name="UserDatabase" auth="Container"
+ *               type="org.apache.catalina.UserDatabase"
+ *               description="User database that can be updated and saved"
+ *               factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
+ *               pathname="conf/tomcat-users.xml" />
+ *   </GlobalNamingResources>
+ *   <Service name="Catalina">
+ *     <Connector port="8080" protocol="HTTP/1.1"
+ *                connectionTimeout="20000"
+ *                redirectPort="8443" />
+ *     <Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />
+ *     <Engine name="Catalina" defaultHost="localhost">
+ *       <Realm className="org.apache.catalina.realm.LockOutRealm">
+ *         <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+ *                resourceName="UserDatabase"/>
+ *       </Realm>
+ *       <Host name="localhost"  appBase="webapps"
+ *             unpackWARs="true" autoDeploy="true">
+ *         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
+ *                prefix="localhost_access_log" suffix=".txt"
+ *                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
+ *
+ *       </Host>
+ *     </Engine>
+ *   </Service>
+ * </Server>
+ *
  */
 public interface Server extends Lifecycle {
 

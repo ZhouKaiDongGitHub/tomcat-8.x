@@ -75,6 +75,20 @@ import org.apache.juli.logging.Log;
  *
  * @author Craig R. McClanahan
  * @author Remy Maucherat
+ *
+ *
+ *  一个<b>容器</b>是一个对象，它可以执行从客户端接收到的请求，并根据这些请求返回响应。通过实现<b> pipeline </b>接口，容器可以选择性地支持以运行时配置的顺序处理请求的阀门管道。
+ *  容器将存在于卡塔琳娜的几个概念层次。以下是一些常见的例子:
+ *  Engine     表示整个Catalina servlet引擎，很可能包含一个或多个子容器，这些子容器要么是主机实现，要么是上下文实现，要么是其他自定义组。
+ *  Host      包含许多上下文的虚拟主机的表示。
+ *  Context    单个ServletContext的表示，它通常包含一个或多个受支持servlet的包装器。
+ *  Wrapper    单个servlet定义的表示(如果servlet本身实现了SingleThreadModel，则可能支持多个servlet实例)
+ *
+ *   一个特定的部署卡塔琳娜不需要包括集装箱在所有上述水平。例如，嵌入在网络设备(如路由器)中的管理应用程序可能只包含一个上下文和几个包装器，
+ *   如果应用程序相对较小，甚至可能只包含一个包装器。因此，需要设计容器实现，以便在给定部署中缺少父容器时能够正确地操作。
+ *   容器还可以与许多支持组件相关联，这些组件提供可以共享的功能(通过将其附加到父容器)或单独定制的功能。目前确认的支助组成部分如下:
+ *
+ * @author kzhou
  */
 public interface Container extends Lifecycle {
 

@@ -68,6 +68,17 @@ import org.xml.sax.SAXParseException;
  *
  * @author Craig R. McClanahan
  * @author Remy Maucherat
+ *
+ *
+ *  * 启动/关闭shell程序的卡特琳娜。有一个非常NB的属性叫做server。以下命令行选项是可识别的:
+ *  * -config
+ *  * -help
+ *  * -nonaming
+ *  * configtest
+ *  * start
+ *  * stop
+ *  *
+ * @author kzhou
  */
 public class Catalina {
 
@@ -543,6 +554,7 @@ public class Catalina {
         initNaming();
 
         // Create and execute our Digester
+        // 解析server.xml 其中有所有的server信息
         Digester digester = createStartDigester();
 
         InputSource inputSource = null;
