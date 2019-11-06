@@ -1,0 +1,89 @@
+06-Nov-2019 10:17:25.662 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/@VERSION@
+06-Nov-2019 10:17:25.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          @VERSION_BUILT@
+06-Nov-2019 10:17:25.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: @VERSION_NUMBER@
+06-Nov-2019 10:17:25.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+06-Nov-2019 10:17:25.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+06-Nov-2019 10:17:25.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Nov-2019 10:17:25.670 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\DevelopeKid\JDK-1.8\jdk1.8.0_121\jre
+06-Nov-2019 10:17:25.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+06-Nov-2019 10:17:25.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Nov-2019 10:17:25.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\WorkSpace_IDEA\tomcat-8.x\catalina-home
+06-Nov-2019 10:17:25.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\WorkSpace_IDEA\tomcat-8.x\catalina-home
+06-Nov-2019 10:17:25.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=catalina-home
+06-Nov-2019 10:17:25.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=catalina-home
+06-Nov-2019 10:17:25.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=catalina-home/endorsed
+06-Nov-2019 10:17:25.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=catalina-home/temp
+06-Nov-2019 10:17:25.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Nov-2019 10:17:25.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=catalina-home/conf/logging.properties
+06-Nov-2019 10:17:25.671 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:D:\DevelopeKid\IDEA\IntelliJ IDEA 2018.3.5\lib\idea_rt.jar=50336:D:\DevelopeKid\IDEA\IntelliJ IDEA 2018.3.5\bin
+06-Nov-2019 10:17:25.672 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+06-Nov-2019 10:17:25.672 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\DevelopeKid\JDK-1.8\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\Program Files (x86)\Xshell\;D:\DevelopeKid\JDK-1.8\jdk1.8.0_121\bin;D:\DevelopeKid\JDK-1.8\jdk1.8.0_121\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseHg\;D:\DevelopeKid\apache-maven-3.6.1\bin;D:\DevelopeKid\Git\cmd;D:\DevelopeKid\apache-ant-1.9.13\bin;D:\DevelopeKid\gradle-4.9\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+06-Nov-2019 10:17:26.384 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Nov-2019 10:17:26.515 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Nov-2019 10:17:26.529 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Nov-2019 10:17:26.531 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Nov-2019 10:17:26.533 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1452 ms
+06-Nov-2019 10:17:26.602 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Nov-2019 10:17:26.602 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+06-Nov-2019 10:17:26.614 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\docs]
+06-Nov-2019 10:17:26.956 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\docs] has finished in [341] ms
+06-Nov-2019 10:17:26.956 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\examples]
+06-Nov-2019 10:17:27.063 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+06-Nov-2019 10:17:27.063 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/examples] startup failed due to previous errors
+06-Nov-2019 10:17:27.083 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\examples] has finished in [127] ms
+06-Nov-2019 10:17:27.083 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\host-manager]
+06-Nov-2019 10:17:27.145 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\host-manager] has finished in [61] ms
+06-Nov-2019 10:17:27.145 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\manager]
+06-Nov-2019 10:17:27.221 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\manager] has finished in [76] ms
+06-Nov-2019 10:17:27.221 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\ROOT]
+06-Nov-2019 10:17:27.288 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\ROOT] has finished in [67] ms
+06-Nov-2019 10:17:27.291 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Nov-2019 10:17:27.301 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Nov-2019 10:17:27.304 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 770 ms
+06-Nov-2019 10:21:27.351 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/@VERSION@
+06-Nov-2019 10:21:27.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          @VERSION_BUILT@
+06-Nov-2019 10:21:27.353 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: @VERSION_NUMBER@
+06-Nov-2019 10:21:27.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 7
+06-Nov-2019 10:21:27.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.1
+06-Nov-2019 10:21:27.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+06-Nov-2019 10:21:27.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             D:\DevelopeKid\JDK-1.8\jdk1.8.0_121\jre
+06-Nov-2019 10:21:27.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_121-b13
+06-Nov-2019 10:21:27.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+06-Nov-2019 10:21:27.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\WorkSpace_IDEA\tomcat-8.x\catalina-home
+06-Nov-2019 10:21:27.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\WorkSpace_IDEA\tomcat-8.x\catalina-home
+06-Nov-2019 10:21:27.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=catalina-home
+06-Nov-2019 10:21:27.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=catalina-home
+06-Nov-2019 10:21:27.355 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=catalina-home/endorsed
+06-Nov-2019 10:21:27.355 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=catalina-home/temp
+06-Nov-2019 10:21:27.355 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+06-Nov-2019 10:21:27.356 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=catalina-home/conf/logging.properties
+06-Nov-2019 10:21:27.356 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:D:\DevelopeKid\IDEA\IntelliJ IDEA 2018.3.5\lib\idea_rt.jar=50903:D:\DevelopeKid\IDEA\IntelliJ IDEA 2018.3.5\bin
+06-Nov-2019 10:21:27.356 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+06-Nov-2019 10:21:27.356 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\DevelopeKid\JDK-1.8\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\Program Files (x86)\Xshell\;D:\DevelopeKid\JDK-1.8\jdk1.8.0_121\bin;D:\DevelopeKid\JDK-1.8\jdk1.8.0_121\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseHg\;D:\DevelopeKid\apache-maven-3.6.1\bin;D:\DevelopeKid\Git\cmd;D:\DevelopeKid\apache-ant-1.9.13\bin;D:\DevelopeKid\gradle-4.9\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;.]
+06-Nov-2019 10:21:27.534 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+06-Nov-2019 10:21:27.829 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Nov-2019 10:21:27.866 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+06-Nov-2019 10:21:27.869 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+06-Nov-2019 10:21:27.888 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 997 ms
+06-Nov-2019 10:21:27.935 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+06-Nov-2019 10:21:27.935 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/@VERSION@
+06-Nov-2019 10:21:27.944 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\docs]
+06-Nov-2019 10:21:28.379 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 10:21:28.401 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\docs] has finished in [456] ms
+06-Nov-2019 10:21:28.401 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\examples]
+06-Nov-2019 10:21:28.648 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 10:21:28.661 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal One or more listeners failed to start. Full details will be found in the appropriate container log file
+06-Nov-2019 10:21:28.662 SEVERE [localhost-startStop-1] org.apache.catalina.core.StandardContext.startInternal Context [/examples] startup failed due to previous errors
+06-Nov-2019 10:21:28.670 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\examples] has finished in [269] ms
+06-Nov-2019 10:21:28.670 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\host-manager]
+06-Nov-2019 10:21:28.774 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 10:21:28.789 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\host-manager] has finished in [119] ms
+06-Nov-2019 10:21:28.789 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\manager]
+06-Nov-2019 10:21:28.925 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 10:21:28.927 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\manager] has finished in [138] ms
+06-Nov-2019 10:21:28.927 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\ROOT]
+06-Nov-2019 10:21:29.010 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+06-Nov-2019 10:21:29.011 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\WorkSpace_IDEA\tomcat-8.x\catalina-home\webapps\ROOT] has finished in [84] ms
+06-Nov-2019 10:21:29.014 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+06-Nov-2019 10:21:29.023 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+06-Nov-2019 10:21:29.026 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1138 ms
