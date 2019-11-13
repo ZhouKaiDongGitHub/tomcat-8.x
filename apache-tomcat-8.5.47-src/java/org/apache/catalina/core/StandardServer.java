@@ -751,6 +751,9 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
      *
      * @exception LifecycleException if this component detects a fatal error
      *  that prevents this component from being used
+     *
+     *  启动一个Server
+     *
      */
     @Override
     protected void startInternal() throws LifecycleException {
@@ -762,6 +765,7 @@ public final class StandardServer extends LifecycleMBeanBase implements Server {
 
         // Start our defined Services
         synchronized (servicesLock) {
+            // services是Server中的一个数组，启动其中的每一个Service
             for (int i = 0; i < services.length; i++) {
                 services[i].start();
             }

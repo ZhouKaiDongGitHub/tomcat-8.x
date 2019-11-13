@@ -416,6 +416,10 @@ public class StandardService extends LifecycleMBeanBase implements Service {
             log.info(sm.getString("standardService.start.name", this.name));
         setState(LifecycleState.STARTING);
 
+        /**
+         * 每一个Service都是由Connector和Container组成
+         * 当然Container是一个抽象概念，由engine executor host 等等组成
+         */
         // Start our defined Container first
         if (engine != null) {
             synchronized (engine) {

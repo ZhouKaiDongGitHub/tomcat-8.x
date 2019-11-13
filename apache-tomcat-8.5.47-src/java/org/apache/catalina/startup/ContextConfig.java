@@ -1069,6 +1069,7 @@ public class ContextConfig implements LifecycleListener {
      * where there is duplicate configuration, the most specific level wins. ie
      * an application's web.xml takes precedence over the host level or global
      * web.xml file.
+     *
      */
     protected void webConfig() {
         /*
@@ -1126,6 +1127,11 @@ public class ContextConfig implements LifecycleListener {
                 WebXml.orderWebFragments(webXml, fragments, sContext);
 
         // Step 3. Look for ServletContainerInitializer implementations
+        // 这边是一个spi的应用，Servlet容器提供了一个扩展点
+        // 扫描所有app/jar下METE-INF/services/javax.servlet.ServletContainerInitializer
+        // ServletContainerInitializer是接口，里面的字符串是实现类，会反射生成，
+        // 然后将类上注解@HandlerTypes参数传入进来，
+        // 执行其中的onStartUp()方法，利用的是字节码技术，直接去读方法区中Class信息来获取需要的信息的
         if (ok) {
             processServletContainerInitializers();
         }
@@ -1227,6 +1233,7 @@ public class ContextConfig implements LifecycleListener {
         // @HandlesTypes matches - only need to process those fragments we
         // are going to use (remember orderedFragments includes any
         // container fragments)
+        // 注解式编程
         if (ok) {
             processAnnotations(
                     orderedFragments, webXml.isMetadataComplete(), javaClassCache);

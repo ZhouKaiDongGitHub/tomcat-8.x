@@ -78,6 +78,10 @@ import org.apache.tomcat.util.res.StringManager;
  *
  * @author Craig R. McClanahan
  * @author Remy Maucherat
+ *
+ * 事件监听模式，原生的Event和Listener
+ * 这是一个神奇的监听器，在纵多实现了Listener接口的实现中，他会解析Host
+ *
  */
 public class HostConfig implements LifecycleListener {
 
@@ -301,6 +305,7 @@ public class HostConfig implements LifecycleListener {
 
         // Process the event that has occurred
         if (event.getType().equals(Lifecycle.PERIODIC_EVENT)) {
+            //这边触发部署
             check();
         } else if (event.getType().equals(Lifecycle.BEFORE_START_EVENT)) {
             beforeStart();
@@ -414,6 +419,11 @@ public class HostConfig implements LifecycleListener {
     /**
      * Deploy applications for any directories or WAR files that are found
      * in our "application root" directory.
+     *
+     * 部署App的三种方式
+     * 1.XML部署
+     * 2.war包部署
+     * 3.扩展目录部署
      */
     protected void deployApps() {
 

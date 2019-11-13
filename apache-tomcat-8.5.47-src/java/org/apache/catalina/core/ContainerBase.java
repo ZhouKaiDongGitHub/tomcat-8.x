@@ -948,7 +948,10 @@ public abstract class ContainerBase extends LifecycleMBeanBase
             ((Lifecycle) pipeline).start();
         }
 
-
+        /**
+         *  在生命周期组件LifeCycleBase中定义了一组监听器，所以，实现了LifeCycle的对象相当于主题，
+         *  会被观察者Listener监听，状态改变后，会触发LifeCycle中的通知事件，通知所有观察者。
+         */
         setState(LifecycleState.STARTING);
 
         // Start our thread

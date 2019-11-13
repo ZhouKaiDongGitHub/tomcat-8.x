@@ -180,6 +180,11 @@ public abstract class LifecycleBase implements Lifecycle {
 
         try {
             setStateInternal(LifecycleState.STARTING_PREP, null, false);
+            /**
+             * 这边很显然是一个模板方法模式：
+             * 抽象父类中定义了算法start()的全部执行过程，但是startInternal()这一步骤由子类自己完成
+             * 所有在父类中startInternal()需要定义为抽象的。
+             */
             startInternal();
             if (state.equals(LifecycleState.FAILED)) {
                 // This is a 'controlled' failure. The component put itself into the
