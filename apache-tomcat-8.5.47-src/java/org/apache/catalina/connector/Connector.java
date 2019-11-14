@@ -75,6 +75,9 @@ public class Connector extends LifecycleMBeanBase  {
         // Instantiate protocol handler
         ProtocolHandler p = null;
         try {
+            //默认的协议是 HTTP/1.1
+            //默认的处理器是protocolHandler.
+            //这些都需要先实例化出来
             Class<?> clazz = Class.forName(protocolHandlerClassName);
             p = (ProtocolHandler) clazz.getConstructor().newInstance();
         } catch (Exception e) {

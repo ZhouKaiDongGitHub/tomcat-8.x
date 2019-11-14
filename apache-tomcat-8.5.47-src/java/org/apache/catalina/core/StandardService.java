@@ -423,7 +423,7 @@ public class StandardService extends LifecycleMBeanBase implements Service {
         // Start our defined Container first
         if (engine != null) {
             synchronized (engine) {
-                engine.start();
+                engine.start();//完成Host Context Wrapper的start()
             }
         }
 

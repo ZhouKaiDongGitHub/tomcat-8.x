@@ -211,8 +211,9 @@ public class NioEndpoint extends AbstractJsseEndpoint<NioChannel> {
      */
     @Override
     public void bind() throws Exception {
-
         if (!getUseInheritedChannel()) {
+            //这边就是采用新的NIO废弃BIO的新的Socket模型进行网络IO 监听
+            //特点就是：管道 多路复用 非阻塞（可以线程/请求切换）
             serverSock = ServerSocketChannel.open();
             socketProperties.setProperties(serverSock.socket());
             InetSocketAddress addr = (getAddress()!=null?new InetSocketAddress(getAddress(),getPort()):new InetSocketAddress(getPort()));
@@ -228,8 +229,8 @@ public class NioEndpoint extends AbstractJsseEndpoint<NioChannel> {
             }
         }
         serverSock.configureBlocking(true); //mimic APR behavior
-
         // Initialize thread count defaults for acceptor, poller
+        // 请求有了之后需要 接收器，转发器，处理器
         if (acceptorThreadCount == 0) {
             // FIXME: Doesn't seem to work that well with multiple accept threads
             acceptorThreadCount = 1;
@@ -239,7 +240,6 @@ public class NioEndpoint extends AbstractJsseEndpoint<NioChannel> {
             pollerThreadCount = 1;
         }
         setStopLatch(new CountDownLatch(pollerThreadCount));
-
         // Initialize SSL if needed
         initialiseSsl();
 
@@ -398,7 +398,7 @@ public class NioEndpoint extends AbstractJsseEndpoint<NioChannel> {
             socket.configureBlocking(false);
             Socket sock = socket.socket();
             socketProperties.setProperties(sock);
-
+            //socketChannel入栈
             NioChannel channel = nioChannels.pop();
             if (channel == null) {
                 SocketBufferHandler bufhandler = new SocketBufferHandler(
@@ -414,6 +414,7 @@ public class NioEndpoint extends AbstractJsseEndpoint<NioChannel> {
                 channel.setIOChannel(socket);
                 channel.reset();
             }
+            //上面执行完Accept，现在执行Poller
             getPoller0().register(channel);
         } catch (Throwable t) {
             ExceptionUtils.handleThrowable(t);
